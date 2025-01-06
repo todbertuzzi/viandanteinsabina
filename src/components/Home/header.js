@@ -1,12 +1,12 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
-
-import hero from "../../images/removed-Holographic.webp"
+import { Link } from "gatsby"
+import hero from "../../images/hero.webp"
 
 const Header = () => {
   return (
     <Fade duration={2200}>
-      <div className="max-w-7xl mx-auto lg:px-6 md:px-3">
+      {/*  <div className="max-w-7xl mx-auto lg:px-6 md:px-3">
         <div className="my-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-0 xl:mt-28 flex gap-10 lg:flex-justify lg:flex flex-col lg:flex-row flex-col-reverse">
           <div className="text-center lg:text-left flex flex-col justify-center">
             <h1 className="text-black text-4xl font-semibold opacity-70">
@@ -39,9 +39,9 @@ const Header = () => {
                   >
                     <path
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M1 5h12m0 0L9 1m4 4L9 9"
                     />
                   </svg>
@@ -65,6 +65,26 @@ const Header = () => {
               alt=""
             ></img>
           </div>
+        </div>
+      </div> */}
+      <div
+        className="relative flex items-center justify-center h-screen bg-cover bg-center"
+        style={{ backgroundImage: `url(${hero})` }}
+      >
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+            WELCOME
+          </h1>
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-8">
+            LOREM ipsum
+          </p>
+          <Link
+            to="/about"
+            className="px-6 py-2 sm:px-8 sm:py-3 bg-blue-500 text-white font-semibold rounded hover:bg-blue-700"
+          >
+            Scopri di più
+          </Link>
         </div>
       </div>
     </Fade>
