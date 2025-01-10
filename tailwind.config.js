@@ -17,7 +17,7 @@ module.exports = {
       darkpurple: "#634880",
       white: colors.white,
       lightblack: "#141414",
-      bg: "hsla(243, 60%, 95%, 1)",
+      bg: "#fbf8d2",
       dp: "#525074",
       gray: colors.gray,
       transparent: colors.transparent,

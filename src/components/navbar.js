@@ -1,20 +1,24 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-
+import logoPilota from "../images/logoRev.png"
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false)
   return (
     <nav className="bg-transparent">
-      <div className="max-w-7xl mx-auto px-3 py-5 rounded-md">
+      <div className="max-w-7xl mx-auto px-3 py-4 rounded-md">
         <div className="flex items-center justify-between h-16">
           <div className="w-full justify-between flex items-center">
             <a
               className="text-black flex-shrink-0 font-montserrat font-semibold"
               href="/"
             >
-              <span className="text-gradient bg-gradient-to-r from-pink to-purple font-semibold">
-                HOLO
-              </span>
+             {/*  <span className="text-gradient bg-gradient-to-r from-pink to-purple font-semibold">
+                <logoPilota />
+              </span> */}
+              <div
+                className="logo"
+                style={{ backgroundImage: `url(${logoPilota})`, width:50, height:50 }}
+              ></div>
             </a>
             <div className="hidden md:block">
               <div className="ml-10 flex items-center space-x-4">

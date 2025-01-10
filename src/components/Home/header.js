@@ -1,7 +1,9 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
 import { Link } from "gatsby"
-import hero from "../../images/hero.webp"
+import hero from "../../images/hero_rev.jpg"
+import { TbBrandBooking } from "react-icons/tb";
+import { TbBrandAirbnb } from "react-icons/tb";
 
 const Header = () => {
   return (
@@ -73,18 +75,29 @@ const Header = () => {
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-            WELCOME
+          <h1 className="text-2xl sm:text-1xl md:text-4xl lg:text-5xl font-bold mb-4">
+            La Casa del Viandante
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-8">
-            LOREM ipsum
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-0 ">
+            La via non è nel cielo. La via è nel cuore.
           </p>
-          <Link
+          <span className="text-sm sm:text-md md:text-1xl lg:text-sm mb-8 italic block">
+            Buddha
+          </span>
+          {/* <Link
             to="/about"
             className="px-6 py-2 sm:px-8 sm:py-3 bg-blue-500 text-white font-semibold rounded hover:bg-blue-700"
           >
             Scopri di più
-          </Link>
+          </Link> */}
+          <button type="button" class="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2">
+            <TbBrandAirbnb size="40"/>
+             intero alloggio
+          </button>
+          <button type="button" class="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2">
+          <TbBrandBooking size="40"/>
+            camere
+          </button>
         </div>
       </div>
     </Fade>
