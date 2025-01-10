@@ -50,7 +50,7 @@ const FeatureSection = () => {
                   href="tel:#"
                   className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-black text-white hover:text-black border border-purple hover:bg-transparent md:text-lg md:px-10"
                 >
-                  Call Us Now
+                  Chiamaci
                 </a>
               </div> */}
               <div className="mt-3 sm:mt-0 sm:ml-3">
@@ -151,7 +151,7 @@ const FeatureSection = () => {
                   href="tel:#"
                   className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-black text-white hover:text-black border border-purple hover:bg-transparent md:text-lg md:px-10"
                 >
-                  Call Us Now
+                 Chiamaci
                 </a>
               </div> */}
               {/* <div className="mt-3 sm:mt-0 sm:ml-3">
