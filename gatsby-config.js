@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Holo - Gatsby Starter`,
-    description: `Holo is a visually striking and highly customizable open source theme built on the powerful Gatsby framework and integrated with the versatile Decap CMS`,
+    title: `La casa del Viandante`,
+    description: `La casa del Viandante descirzione`,
     siteUrl: "https://holo-theme.netlify.app/",
     author: `Travis Lord <hi@travislord.xyz>`,
   },
@@ -79,8 +79,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Holo - Gatsby Starter Theme`,
-        short_name: `Holo`,
+        name: `La casa del Viandante`,
+        short_name: `La casa del Viandante`,
         start_url: `/`,
         background_color: `#ebebfa`,
         theme_color: `#ebebfa`,
