@@ -74,7 +74,7 @@ const BlogsContainer = ({ data }) => {
           <Input placeholder="Enter your email"></Input>
           <a
             href="#"
-            className="mt-4 transition-all duration-500ms ease-in-out hover:ease-in-out inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-black hover:text-white rounded-lg border border-purple  hover:bg-purple"
+            className="mt-4 transition-all duration-500ms ease-in-out hover:ease-in-out inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-black hover:text-white rounded-lg border border-purple  hover:bg-black"
           >
             Join The List
           </a>

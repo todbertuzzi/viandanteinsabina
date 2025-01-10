@@ -33,7 +33,7 @@ const FeatureSection = () => {
 
           <div className="lg:w-1/2 sm:text-center lg:text-right flex flex-col justify-center">
             <h2 className="text-black text-4xl font-semibold">IL NOSTRO CONCETTO DI</h2>
-            <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">
+            <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient-old bg-gradient-to-r from-pink to-purple">
               OSPITALITÀ
             </h3>
 
@@ -48,7 +48,7 @@ const FeatureSection = () => {
               {/* <div className="rounded-md">
                 <a
                   href="tel:#"
-                  className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-purple text-white hover:text-black border border-purple hover:bg-transparent md:text-lg md:px-10"
+                  className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-black text-white hover:text-black border border-purple hover:bg-transparent md:text-lg md:px-10"
                 >
                   Call Us Now
                 </a>
@@ -56,7 +56,7 @@ const FeatureSection = () => {
               <div className="mt-3 sm:mt-0 sm:ml-3">
                 <a
                   href="/gallery"
-                  className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 border border-purple text-base font-medium rounded-md text-black hover:text-white bg-transparent hover:bg-purple md:py-3 md:text-lg md:px-10"
+                  className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 border border-purple text-base font-medium rounded-md text-black hover:text-white bg-transparent hover:bg-black md:py-3 md:text-lg md:px-10"
                 >
                   Approfondisci
                   <svg
@@ -134,7 +134,7 @@ const FeatureSection = () => {
 
           <div className="lg:w-1/2 sm:text-center lg:text-left flex flex-col justify-center">
             <h2 className="text-black text-4xl font-semibold">ELOGIO AI FRUTTI DELLA TERRA</h2>
-            <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">
+            <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient-old bg-gradient-to-r from-pink to-purple">
               L'OLIO
             </h3>
 
@@ -149,7 +149,7 @@ const FeatureSection = () => {
               {/* <div className="rounded-md">
                 <a
                   href="tel:#"
-                  className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-purple text-white hover:text-black border border-purple hover:bg-transparent md:text-lg md:px-10"
+                  className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-black text-white hover:text-black border border-purple hover:bg-transparent md:text-lg md:px-10"
                 >
                   Call Us Now
                 </a>
@@ -157,7 +157,7 @@ const FeatureSection = () => {
               {/* <div className="mt-3 sm:mt-0 sm:ml-3">
                 <a
                   href="/gallery"
-                  className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 border border-purple text-base font-medium rounded-md text-black hover:text-white bg-transparent hover:bg-purple md:py-3 md:text-lg md:px-10"
+                  className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 border border-purple text-base font-medium rounded-md text-black hover:text-white bg-transparent hover:bg-black md:py-3 md:text-lg md:px-10"
                 >
                   Approfondisci
                   <svg
@@ -197,7 +197,7 @@ const FeatureSection = () => {
 
           <div className="lg:w-1/2 sm:text-center lg:text-left flex flex-col justify-center">
             <h2 className="text-black text-4xl font-semibold">COME</h2>
-            <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">
+            <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient-old bg-gradient-to-r from-pink to-purple">
               CONTATTARCI
             </h3>
             <p className="mt-3 text-base text-black-70 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-auto lg:ml-0">
@@ -218,7 +218,7 @@ const FeatureSection = () => {
         <h2 className="text-black text-4xl font-semibold opacity-70">
           OPEN SOURCE
         </h2>
-        <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">
+        <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient-old bg-gradient-to-r from-pink to-purple">
           A React based framework
         </h3>
         <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
@@ -238,7 +238,7 @@ const FeatureSection = () => {
         <h2 className="text-black text-4xl font-semibold opacity-70">
           INTEGRATIONS
         </h2>
-        <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">
+        <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient-old bg-gradient-to-r from-pink to-purple">
           Discover and connect
         </h3>
         <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
@@ -256,7 +256,7 @@ const FeatureSection = () => {
           <div className="rounded-md">
             <a
               href="/contact/"
-              className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-purple text-white hover:text-black border border-purple hover:bg-transparent md:text-lg md:px-10"
+              className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-black text-white hover:text-black border border-purple hover:bg-transparent md:text-lg md:px-10"
             >
               Send Enquiry
             </a>
@@ -304,7 +304,7 @@ const FeatureSection = () => {
       </Fade>
       {/* 
       <div className="mt-10 px-8">
-        <h2 className="text-black text-4xl font-semibold text-gradient bg-gradient-to-r from-pink to-purple">
+        <h2 className="text-black text-4xl font-semibold text-gradient-old bg-gradient-to-r from-pink to-purple">
           {" "}
           Integrations
         </h2>
@@ -326,7 +326,7 @@ const FeatureSection = () => {
           <div className="rounded-md">
             <a
               href="/contact/"
-              className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-purple text-white hover:text-purple border border-purple hover:bg-transparent md:text-lg md:px-10"
+              className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-black text-white hover:text-purple border border-purple hover:bg-transparent md:text-lg md:px-10"
             >
               Send Enquiry
             </a>

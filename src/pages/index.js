@@ -17,8 +17,8 @@ const IndexPage = () => (
       ></Seo>
       <Header></Header>
       <FeatureSection></FeatureSection>
-      <FeaturedBlog></FeaturedBlog>
-      <Testimonial></Testimonial>
+      {/* <FeaturedBlog></FeaturedBlog>
+      <Testimonial></Testimonial> */}
     </Layout>
   </div>
 )

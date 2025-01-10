@@ -14,7 +14,7 @@ const Header = () => {
             <h1 className="text-black text-4xl font-semibold opacity-70">
               MY NAME IS HOLO
             </h1>
-            <h2 className="text-black text-gradient bg-gradient-to-r from-pink to-purple text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl">
+            <h2 className="text-black text-gradient-old bg-gradient-to-r from-pink to-purple text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl">
               Hi there!
             </h2>
 
@@ -29,7 +29,7 @@ const Header = () => {
               <div className="rounded-md">
                 <a
                   href="/contact"
-                  className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-purple text-white hover:text-black border border-purple  hover:bg-transparent md:text-lg md:px-10 "
+                  className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-black text-white hover:text-black border border-purple  hover:bg-transparent md:text-lg md:px-10 "
                 >
                   Contact Us
                   <svg
@@ -52,7 +52,7 @@ const Header = () => {
               <div className="mt-3 sm:mt-0 sm:ml-3">
                 <a
                   href="/about"
-                  className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 border border-purple text-base font-medium rounded-md text-black hover:text-white bg-transparent hover:bg-purple md:py-3 md:text-lg md:px-10"
+                  className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 border border-purple text-base font-medium rounded-md text-black hover:text-white bg-transparent hover:bg-black md:py-3 md:text-lg md:px-10"
                 >
                   Get To Know Us
                 </a>

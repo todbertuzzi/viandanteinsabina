@@ -6,7 +6,7 @@ import logo from "../images/3D-liquid-abstract-5.webp"
 const Footer = () => {
   return (
     <div className="m-4">
-      <div className="max-w-7xl mx-auto mt-10 h-auto lg:mb-8 sm:mb-4 xs:mb-4 xxs:mb-4">
+      {/* <div className="max-w-7xl mx-auto mt-10 h-auto lg:mb-8 sm:mb-4 xs:mb-4 xxs:mb-4">
         <div className="footer bg-gradient-to-r from-pink to-dark  bg-gray-800  p-10 mt-10 rounded-xl">
           <div className="grid grid-cols-2 xxs:grid-cols-1 lg:grid-cols-2">
             <div>
@@ -70,7 +70,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

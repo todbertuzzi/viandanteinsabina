@@ -29,9 +29,9 @@ a {
 }
 
 @layer utilities {
-  .text-gradient {
+  .text-gradient-old {
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+  /*   -webkit-text-fill-color: transparent; */
   }
 }
 
