@@ -14,6 +14,7 @@ import { CiMail } from "react-icons/ci";
 import { FaSquarePhone } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import logoPilota from "../../images/logoRev.png"
 
 const FeatureSection = () => {
   return (
@@ -32,6 +33,8 @@ const FeatureSection = () => {
           </div>
 
           <div className="lg:w-1/2 sm:text-center lg:text-right flex flex-col justify-center">
+           
+            <img  className="logo-section"  src={logoPilota} alt="Logo" />
             <h2 className="text-black text-4xl font-semibold">IL NOSTRO CONCETTO DI</h2>
             <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient-old bg-gradient-to-r from-pink to-purple">
               OSPITALITÀ
@@ -86,6 +89,7 @@ const FeatureSection = () => {
 
 
           <div className="w-4/6  bg-gray-800  p-8 rounded-xl m-5 xxs:w-full xs:w-full sm:w-4/6">
+          <img  className="logo-section sx"  src={logoPilota} alt="Logo" />
             <h2 className="text-white text-4xl">
               La gioia di incontrarsi
             </h2>
@@ -133,6 +137,7 @@ const FeatureSection = () => {
 
 
           <div className="lg:w-1/2 sm:text-center lg:text-left flex flex-col justify-center">
+           <img  className="logo-section sx"  src={logoPilota} alt="Logo" />
             <h2 className="text-black text-4xl font-semibold">ELOGIO AI FRUTTI DELLA TERRA</h2>
             <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient-old bg-gradient-to-r from-pink to-purple">
               L'OLIO

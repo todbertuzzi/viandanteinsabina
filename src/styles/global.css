@@ -94,3 +94,17 @@ body {
 .color-viandante{
   color:#a3ad7b;
 }
+
+.logo-section {
+  width: 100px;
+  margin-right: 0;
+  /* float: right; */
+  margin-left: auto;
+}
+
+.logo-section.sx {
+  width: 100px;
+  margin-right: auto;
+  /* float: right; */
+  margin-left: 0;
+}
