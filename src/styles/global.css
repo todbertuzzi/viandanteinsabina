@@ -71,3 +71,26 @@ body {
 .bg-colore {
   background-color: #fbf8d2;
 }
+
+.airbnb_book {
+  background-color: #fc642d;
+  color:white;
+}
+
+.booking_book {
+  background-color: #003b95;
+  color:white;
+}
+
+.airbnb_book:hover {
+  background-color: white;
+  color:#fc642d;
+}
+
+.booking_book:hover {
+  background-color: white;
+  color:#003b95;
+}
+.color-viandante{
+  color:#a3ad7b;
+}
