@@ -1,6 +1,7 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
 import ExperienceSection from "../Experience/experienceSection"
+import Map from "../Map";
 // Assets
 import HeroImage from "../../images/holographic-background-1.webp"
 import Image1 from "../../images/3D-liquid-abstract-1.webp"
@@ -15,7 +16,9 @@ import { FaSquarePhone } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import logoPilota from "../../images/logoRev.png"
-
+import { IoIosAirplane } from "react-icons/io";
+import { FaCar } from "react-icons/fa";
+import { FaTrain } from "react-icons/fa6";
 const FeatureSection = () => {
   return (
     <div className="max-w-7xl mx-auto">
@@ -33,14 +36,14 @@ const FeatureSection = () => {
           </div>
 
           <div className="lg:w-1/2 sm:text-center lg:text-right flex flex-col justify-center">
-           
-            <img  className="logo-section"  src={logoPilota} alt="Logo" />
+
+            <img className="logo-section" src={logoPilota} alt="Logo" />
             <h2 className="text-black text-4xl font-semibold">IL NOSTRO CONCETTO DI</h2>
             <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient-old bg-gradient-to-r from-pink to-purple">
               OSPITALITÀ
             </h3>
 
-            <p className="mt-3 text-base text-black-70 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-auto lg:mr-0">
+            <p className="mt-3 text-base text-black-70 sm:mt-5 sm:text-lg  sm:mx-auto md:mt-5 md:text-xl lg:mx-auto lg:mr-0">
               HOSPES in origine è il “padrone di casa” che dà ospitalità al forestiero;
               i rapporti che si istauravano tra chi accoglieva e chi era accolto erano
               così stretti che, sin dai tempi più antichi, hospes ha indicato anche
@@ -89,7 +92,7 @@ const FeatureSection = () => {
 
 
           <div className="w-4/6  bg-gray-800  p-8 rounded-xl m-5 xxs:w-full xs:w-full sm:w-4/6">
-          <img  className="logo-section sx"  src={logoPilota} alt="Logo" />
+            <img className="logo-section sx" src={logoPilota} alt="Logo" />
             <h2 className="text-white text-4xl">
               La gioia di incontrarsi
             </h2>
@@ -137,7 +140,7 @@ const FeatureSection = () => {
 
 
           <div className="lg:w-1/2 sm:text-center lg:text-left flex flex-col justify-center">
-           <img  className="logo-section sx"  src={logoPilota} alt="Logo" />
+            <img className="logo-section sx" src={logoPilota} alt="Logo" />
             <h2 className="text-black text-4xl font-semibold">ELOGIO AI FRUTTI DELLA TERRA</h2>
             <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient-old bg-gradient-to-r from-pink to-purple">
               L'OLIO
@@ -206,20 +209,20 @@ const FeatureSection = () => {
               CONTATTARCI
             </h3>
             <p className="mt-3 text-base text-black-70 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-auto lg:ml-0">
-                Contattaci per avere più informazioni sull'ospitalità, le attività o per lasciarci un messaggio.
+              Contattaci per avere più informazioni sull'ospitalità, le attività o per lasciarci un messaggio.
             </p>
           </div>
           <div className="lg:w-1/2 my-4 flex justify-end content-center">
-                <ul>
-                  <li><h3 className="text-2xl flex items-center mb-2"><FaSquarePhone className="mr-2" size="28"/> Telefono: +39 3279027107</h3></li>
-                  <li><h3 className="text-2xl flex items-center mb-2"><FaWhatsapp className="mr-2" size="28"/> Whatsapp: +39 3279027107</h3></li>
-                  <li><h3 className="text-2xl flex items-center"><CiMail className="mr-2" size="28"/> Mail: ilviandanteinsabina@gmail.com</h3></li>
-                </ul>
+            <ul>
+              <li><h3 className="text-2xl flex items-center mb-2"><FaSquarePhone className="mr-2" size="28" /> Telefono: +39 3279027107</h3></li>
+              <li><h3 className="text-2xl flex items-center mb-2"><FaWhatsapp className="mr-2" size="28" /> Whatsapp: +39 3279027107</h3></li>
+              <li><h3 className="text-2xl flex items-center"><CiMail className="mr-2" size="28" /> Mail: ilviandanteinsabina@gmail.com</h3></li>
+            </ul>
           </div>
         </div>
       </div>
 
-     {/*  <div className="mt-10 px-8">
+      {/*  <div className="mt-10 px-8">
         <h2 className="text-black text-4xl font-semibold opacity-70">
           OPEN SOURCE
         </h2>
@@ -239,7 +242,7 @@ const FeatureSection = () => {
         </p>
       </div> */}
 
-     {/*  <div className="mt-10 px-8">
+      {/*  <div className="mt-10 px-8">
         <h2 className="text-black text-4xl font-semibold opacity-70">
           INTEGRATIONS
         </h2>
@@ -269,7 +272,7 @@ const FeatureSection = () => {
         </div>
       </div> */}
 
-     {/*  <Fade bottom cascade>
+      {/*  <Fade bottom cascade>
         <div className="grid grid-cols-3 mt-10 gap-4 xxs:grid-cols-1 lg:grid-cols-3 px-5">
           <div className="rounded-xl overflow-hidden relative hover:opacity-100 flex justify-center">
             <img alt="Image" src={Image1}></img>
@@ -282,29 +285,76 @@ const FeatureSection = () => {
           </div>
         </div>
       </Fade> */}
+ 
+      <div className=" max-w-7xl mx-auto lg:px-8 md:px-3">
+        <div className="mx-auto max-w-7xl px-4 sm:mt-10 sm:px-6 md:mt-10 lg:mt-10 lg:px-0 xl:mt-10 flex flex-col lg:flex-row gap-3 lg:flex-justify">
+          <div className="w-full sm:text-center lg:text-left flex flex-col justify-center">
+
+            <h2 className="text-black text-4xl font-semibold">COME</h2>
+            <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient-old bg-gradient-to-r from-pink to-purple">
+              RAGGIUNGERCI
+            </h3>
+            <p className="mt-3 text-base text-black-70 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-auto lg:ml-0">
+              la nostra struttura si trova in <span className="font-bold">CONTRADA GALANTINA, 1 FORANO 02044 (RIETI)</span>, all'incrocio tra la SR313 E LA SR657 di fronte allo SNACK BAR ALESSIO, si sale la strada bianca per 50 metri e si è arrivati al cancello d'ingresso.
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div className=" max-w-7xl mx-auto lg:px-8 md:px-3 border-b-4 pb-6 mt-6">
+        <div className="mx-auto max-w-7xl px-4 sm:mt-10 sm:px-6 md:mt-10 lg:mt-10 lg:px-0 xl:mt-10 flex flex-col lg:flex-row gap-3 lg:flex-justify">
+
+
+          <div className="lg:w-1/3 sm:text-center lg:text-left flex flex-col justify-center">
+            <div className="come-arrivare flex flex-col">
+              <div className="mb-2">
+                <div className="flex"><FaCar size="20" /><span className="font-bold ml-2 uppercase">Macchina</span></div>
+                <p>Uscita autostradale Ponzano Soratte, seguire SR657 la Sabinese, poco prima dell'incrocio con SR313 la Ternana, fermarsi davanti al bar di Alessio e proseguire sulla sterrata che sta di fronte al bar sulla sinistra.</p>
+              </div>
+              <div className="mb-2">
+                <div className="flex"><FaTrain size="20" /><span className="font-bold ml-2 uppercase">TRENO</span></div>
+                <p>La Stazione di Poggio Mirteto scalo è la più vicina. Offriamo gratuitamente un servizio navetta, prendendo precedenti accordi.</p>
+              </div>
+              <div>
+                <div className="flex"><IoIosAirplane size="20" /> <span className="font-bold ml-2 uppercase">AEREO</span></div>
+                <p> Da Fiumicino aeroporto c'è il treno per Poggio Mirteto o per Orte che ferma a Poggio Mirteto scalo. Offriamo gratuitamente un servizio navetta, prendendo precedenti accordi.
+                </p>
+              </div>
+            </div>
+
+
+            <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+
+            </div>
+          </div>
+          <div className="lg:w-2/3 my-4">
+            <Map />
+          </div>
+        </div>
+      </div>
       <div className=" max-w-7xl mx-auto lg:px-8 md:px-3 ">
         <div className="mx-auto max-w-7xl px-4 sm:mt-10 sm:px-6 md:mt-10 lg:mt-10 lg:px-0 justify-center xl:mt-10 flex flex-col lg:flex-row gap-3 lg:flex-justify">
           <div className=" sm:text-center lg:text-center flex flex-col justify-center">
             <h2 className="text-black text-2xl font-semibold">SIAMO ANCHE SU</h2>
           </div>
-          
+
         </div>
       </div>
       <Fade bottom cascade>
         <div className="mt-0 flex flex-row justify-space xxs:flex-col xs:flex-col sm:flex-row content-center justify-start align-middle text-center">
           <div className="w-3/6 p-8  rounded-xl m-5 xxs:w-full xs:w-full sm:w-3/6">
-           
+
             <div className="mt-1 flex items-center  justify-center text-black text-xl">
-              <FaInstagram className="mr-2" size="50"/> Instagram</div>
+              <FaInstagram className="mr-2" size="50" /> Instagram</div>
           </div>
 
           <div className="w-3/6  p-8 flex justify-center rounded-xl m-5 xxs:w-full xs:w-full sm:w-3/6">
-           
+
             <div className="mt-1 flex items-center  justify-center text-black text-xl">
-              <FaFacebook className="mr-2" size="50"/> Facebook
+              <FaFacebook className="mr-2" size="50" /> Facebook
             </div>
           </div>
-          
+
         </div>
       </Fade>
       {/* 
