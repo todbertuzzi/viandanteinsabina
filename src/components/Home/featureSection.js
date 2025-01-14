@@ -23,7 +23,7 @@ const FeatureSection = () => {
   return (
     <div className="max-w-7xl mx-auto">
 
-      <ExperienceSection />
+      <ExperienceSection  />
 
       <div className="LUCA max-w-7xl mx-auto lg:px-8 md:px-3">
         <div className="mx-auto max-w-7xl px-4 sm:mt-10 sm:px-6 md:mt-10 lg:mt-10 lg:px-0 xl:mt-10 flex flex-col lg:flex-row gap-3 lg:flex-justify">
@@ -135,7 +135,7 @@ const FeatureSection = () => {
         </div>
       </Fade>
 
-      <div className=" max-w-7xl mx-auto lg:px-8 md:px-3">
+      <div className="max-w-7xl mx-auto lg:px-8 md:px-3">
         <div className="mx-auto max-w-7xl px-4 sm:mt-10 sm:px-6 md:mt-10 lg:mt-10 lg:px-0 xl:mt-10 flex flex-col lg:flex-row gap-3 lg:flex-justify">
 
 
@@ -199,7 +199,7 @@ const FeatureSection = () => {
 
       {/* CONTATTI */}
 
-      <div className=" max-w-7xl mx-auto lg:px-8 md:px-3 border-t-4 border-b-4 pb-6 mt-6">
+      <div id="contattaci" className=" max-w-7xl mx-auto lg:px-8 md:px-3 border-t-4 border-b-4 pb-6 mt-6">
         <div className="mx-auto max-w-7xl px-4 sm:mt-10 sm:px-6 md:mt-10 lg:mt-10 lg:px-0 xl:mt-10 flex flex-col lg:flex-row gap-3 lg:flex-justify">
 
 
@@ -216,7 +216,9 @@ const FeatureSection = () => {
             <ul>
               <li><h3 className="text-2xl flex items-center mb-2"><FaSquarePhone className="mr-2" size="28" /> Telefono: +39 3279027107</h3></li>
               <li><h3 className="text-2xl flex items-center mb-2"><FaWhatsapp className="mr-2" size="28" /> Whatsapp: +39 3279027107</h3></li>
-              <li><h3 className="text-2xl flex items-center"><CiMail className="mr-2" size="28" /> Mail: ilviandanteinsabina@gmail.com</h3></li>
+              <li><h3 className="text-2xl flex items-center mb-2"><CiMail className="mr-2" size="28" /> Mail: ilviandanteinsabina@gmail.com</h3></li>
+              <li><h3 className="text-2xl flex items-center mb-2"><FaInstagram className="mr-2" size="28" /> Instagram</h3></li>
+              <li><h3 className="text-2xl flex items-center"><FaFacebook className="mr-2" size="28" /> Facebook</h3></li>
             </ul>
           </div>
         </div>
@@ -286,7 +288,7 @@ const FeatureSection = () => {
         </div>
       </Fade> */}
  
-      <div className=" max-w-7xl mx-auto lg:px-8 md:px-3">
+      <div id="dove" className=" max-w-7xl mx-auto lg:px-8 md:px-3">
         <div className="mx-auto max-w-7xl px-4 sm:mt-10 sm:px-6 md:mt-10 lg:mt-10 lg:px-0 xl:mt-10 flex flex-col lg:flex-row gap-3 lg:flex-justify">
           <div className="w-full sm:text-center lg:text-left flex flex-col justify-center">
 
@@ -305,13 +307,13 @@ const FeatureSection = () => {
         <div className="mx-auto max-w-7xl px-4 sm:mt-10 sm:px-6 md:mt-10 lg:mt-10 lg:px-0 xl:mt-10 flex flex-col lg:flex-row gap-3 lg:flex-justify">
 
 
-          <div className="lg:w-1/3 sm:text-center lg:text-left flex flex-col justify-center">
+          <div className="lg:w-1/3 sm:text-center lg:text-left flex flex-col justify-center md:pr-3">
             <div className="come-arrivare flex flex-col">
-              <div className="mb-2">
+              <div className="mb-3">
                 <div className="flex"><FaCar size="20" /><span className="font-bold ml-2 uppercase">Macchina</span></div>
                 <p>Uscita autostradale Ponzano Soratte, seguire SR657 la Sabinese, poco prima dell'incrocio con SR313 la Ternana, fermarsi davanti al bar di Alessio e proseguire sulla sterrata che sta di fronte al bar sulla sinistra.</p>
               </div>
-              <div className="mb-2">
+              <div className="mb-3">
                 <div className="flex"><FaTrain size="20" /><span className="font-bold ml-2 uppercase">TRENO</span></div>
                 <p>La Stazione di Poggio Mirteto scalo è la più vicina. Offriamo gratuitamente un servizio navetta, prendendo precedenti accordi.</p>
               </div>
@@ -332,31 +334,7 @@ const FeatureSection = () => {
           </div>
         </div>
       </div>
-      <div className=" max-w-7xl mx-auto lg:px-8 md:px-3 ">
-        <div className="mx-auto max-w-7xl px-4 sm:mt-10 sm:px-6 md:mt-10 lg:mt-10 lg:px-0 justify-center xl:mt-10 flex flex-col lg:flex-row gap-3 lg:flex-justify">
-          <div className=" sm:text-center lg:text-center flex flex-col justify-center">
-            <h2 className="text-black text-2xl font-semibold">SIAMO ANCHE SU</h2>
-          </div>
-
-        </div>
-      </div>
-      <Fade bottom cascade>
-        <div className="mt-0 flex flex-row justify-space xxs:flex-col xs:flex-col sm:flex-row content-center justify-start align-middle text-center">
-          <div className="w-3/6 p-8  rounded-xl m-5 xxs:w-full xs:w-full sm:w-3/6">
-
-            <div className="mt-1 flex items-center  justify-center text-black text-xl">
-              <FaInstagram className="mr-2" size="50" /> Instagram</div>
-          </div>
-
-          <div className="w-3/6  p-8 flex justify-center rounded-xl m-5 xxs:w-full xs:w-full sm:w-3/6">
-
-            <div className="mt-1 flex items-center  justify-center text-black text-xl">
-              <FaFacebook className="mr-2" size="50" /> Facebook
-            </div>
-          </div>
-
-        </div>
-      </Fade>
+      
       {/* 
       <div className="mt-10 px-8">
         <h2 className="text-black text-4xl font-semibold text-gradient-old bg-gradient-to-r from-pink to-purple">

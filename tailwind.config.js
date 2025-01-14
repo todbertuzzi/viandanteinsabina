@@ -6,6 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        /* font-family: 'Open Sans Variable', sans-serif; */
+        opensans: ["Open Sans Variable", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
         notoserif: ["Noto Serif", "sans-serif"],
       },

@@ -70,6 +70,7 @@ const Header = () => {
         </div>
       </div> */}
       <div
+        id="prenota"
         className="relative flex items-center justify-center h-screen bg-cover bg-center"
         style={{ backgroundImage: `url(${hero})` }}
       >
@@ -91,11 +92,11 @@ const Header = () => {
             Scopri di più
           </Link> */}
           <button type="button" class="text-gray-900 airbnb_book focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600  me-2 mb-2">
-            <TbBrandAirbnb size="40"/>
-             intero alloggio
+            <TbBrandAirbnb size="40" />
+            intero alloggio
           </button>
           <button type="button" class="text-gray-900  booking_book  focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 0   me-2 mb-2">
-          <TbBrandBooking size="40"/>
+            <TbBrandBooking size="40" />
             camere
           </button>
         </div>

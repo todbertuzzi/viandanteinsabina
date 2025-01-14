@@ -11,7 +11,7 @@ const ExperienceSection = () => {
   return (
    
       <Fade bottom cascade>
-        <div className="mt-10 flex flex-row justify-space xxs:flex-col xs:flex-col sm:flex-row content-center justify-center align-middle text-center">
+        <div id="attivita" className="mt-10 flex flex-row justify-space xxs:flex-col xs:flex-col sm:flex-row content-center justify-center align-middle text-center">
           <ExperienceCard numSample = "0"/>
 
           <ExperienceCard numSample = "1"/>
