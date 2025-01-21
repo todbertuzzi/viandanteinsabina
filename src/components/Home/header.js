@@ -1,7 +1,7 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
 import { Link } from "gatsby"
-import hero from "../../images/hero_rev.jpg"
+import hero from "../../images/hero_rev2.jpg"
 import { TbBrandBooking } from "react-icons/tb";
 import { TbBrandAirbnb } from "react-icons/tb";
 
@@ -74,15 +74,15 @@ const Header = () => {
         className="relative flex items-center justify-center h-screen bg-cover bg-center"
         style={{ backgroundImage: `url(${hero})` }}
       >
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8">
-          <h1 className="text-2xl sm:text-1xl md:text-4xl lg:text-5xl font-bold mb-4 color-viandante">
+        <div className="absolute inset-0 bg-black opacity-25"></div>
+        <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 drop-shadow">
+          <h1 className="text-2xl sm:text-1xl md:text-4xl lg:text-5xl font-bold mb-4 text-white">
             La Casa del Viandante
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-0 color-viandante">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-0 text-white">
             La via non è nel cielo. La via è nel cuore.
           </p>
-          <span className="text-sm sm:text-md md:text-1xl lg:text-sm mb-8 italic block color-viandante">
+          <span className="text-sm sm:text-md md:text-1xl lg:text-sm mb-8 italic block text-white">
             Buddha
           </span>
           {/* <Link
@@ -91,11 +91,11 @@ const Header = () => {
           >
             Scopri di più
           </Link> */}
-          <button type="button" class="text-gray-900 airbnb_book focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600  me-2 mb-2">
+          <button type="button" class="mr-2 text-gray-900 airbnb_book focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600  me-2 mb-2">
             <TbBrandAirbnb size="40" />
             intero alloggio
           </button>
-          <button type="button" class="text-gray-900  booking_book  focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 0   me-2 mb-2">
+          <button type="button" class="ml-2 text-gray-900  booking_book  focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 0   me-2 mb-2">
             <TbBrandBooking size="40" />
             camere
           </button>

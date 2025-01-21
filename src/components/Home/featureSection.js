@@ -19,7 +19,13 @@ import logoPilota from "../../images/logoRev.png"
 import { IoIosAirplane } from "react-icons/io";
 import { FaCar } from "react-icons/fa";
 import { FaTrain } from "react-icons/fa6";
+import ReactDOM from 'react-dom';
+import Modal from 'react-modal';
+
 const FeatureSection = () => {
+ 
+  
+
   return (
     <div className="max-w-7xl mx-auto">
 
@@ -37,8 +43,8 @@ const FeatureSection = () => {
 
           <div className="lg:w-1/2 sm:text-center lg:text-right flex flex-col justify-center">
 
-            <img className="logo-section" src={logoPilota} alt="Logo" />
-            <h2 className="text-black text-4xl font-semibold">IL NOSTRO CONCETTO DI</h2>
+            <img className="logo-section w-16 md:w-24" src={logoPilota} alt="Logo" />
+            <h2 className="text-black md:text-3xl sm:text-2xl font-semibold">IL NOSTRO CONCETTO DI</h2>
             <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient-old bg-gradient-to-r from-pink to-purple">
               OSPITALITÀ
             </h3>
@@ -88,11 +94,11 @@ const FeatureSection = () => {
       </div>
 
       <Fade bottom cascade>
-        <div className="mt-10 flex flex-row justify-space xxs:flex-col xs:flex-col sm:flex-row">
+        <div className="mt-10 flex mx-2 md:mx-0   justify-space xxs:flex-col xs:flex-col sm:flex-row">
 
 
-          <div className="w-4/6  bg-gray-800  p-8 rounded-xl m-5 xxs:w-full xs:w-full sm:w-4/6">
-            <img className="logo-section sx" src={logoPilota} alt="Logo" />
+          <div className="w-4/6  bg-gray-800  p-8 rounded-xl sm:m-0 md:m-5 md:mt-0 xxs:w-full xs:w-full sm:w-4/6">
+            <img className="logo-section w-16 md:w-24 sx" src={logoPilota} alt="Logo" />
             <h2 className="text-white text-4xl">
               La gioia di incontrarsi
             </h2>
@@ -106,7 +112,7 @@ const FeatureSection = () => {
             </p>
           </div>
 
-          <div className="w-2/6 bg-gradient-to-r from-pink to-purple p-0 rounded-xl m-5 xxs:w-full xs:w-full sm:w-2/6">
+          <div className="w-2/6 bg-gradient-to-r from-pink to-purple p-0 rounded-xl sm:m-0 mt-2  md:m-5 md:mt-0 xxs:w-full xs:w-full sm:w-2/6 hidden md:block">
             {/* <span className="text-black font-semibold font-montserrat text-4xl">
               TECH STACK
             </span>
@@ -135,13 +141,13 @@ const FeatureSection = () => {
         </div>
       </Fade>
 
-      <div className="max-w-7xl mx-auto lg:px-8 md:px-3">
+      <div className="max-w-7xl mx-auto lg:px-8 md:px-3 mt-4 md:mt-0">
         <div className="mx-auto max-w-7xl px-4 sm:mt-10 sm:px-6 md:mt-10 lg:mt-10 lg:px-0 xl:mt-10 flex flex-col lg:flex-row gap-3 lg:flex-justify">
 
 
           <div className="lg:w-1/2 sm:text-center lg:text-left flex flex-col justify-center">
-            <img className="logo-section sx" src={logoPilota} alt="Logo" />
-            <h2 className="text-black text-4xl font-semibold">ELOGIO AI FRUTTI DELLA TERRA</h2>
+            <img className="logo-section w-16 md:w-24 sx" src={logoPilota} alt="Logo" />
+            <h2 className="text-black md:text-4xl sm:text-3xl font-semibold">ELOGIO AI FRUTTI DELLA TERRA</h2>
             <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient-old bg-gradient-to-r from-pink to-purple">
               L'OLIO
             </h3>
@@ -212,13 +218,13 @@ const FeatureSection = () => {
               Contattaci per avere più informazioni sull'ospitalità, le attività o per lasciarci un messaggio.
             </p>
           </div>
-          <div className="lg:w-1/2 my-4 flex justify-end content-center">
+          <div className="lg:w-1/2 my-4 flex md:justify-end sm:justify-start content-center">
             <ul>
-              <li><h3 className="text-2xl flex items-center mb-2"><FaSquarePhone className="mr-2" size="28" /> Telefono: +39 3279027107</h3></li>
-              <li><h3 className="text-2xl flex items-center mb-2"><FaWhatsapp className="mr-2" size="28" /> Whatsapp: +39 3279027107</h3></li>
-              <li><h3 className="text-2xl flex items-center mb-2"><CiMail className="mr-2" size="28" /> Mail: ilviandanteinsabina@gmail.com</h3></li>
-              <li><h3 className="text-2xl flex items-center mb-2"><FaInstagram className="mr-2" size="28" /> Instagram</h3></li>
-              <li><h3 className="text-2xl flex items-center"><FaFacebook className="mr-2" size="28" /> Facebook</h3></li>
+              <li><div className="md:text-2xl sm:text-xl flex items-center mb-2"><FaSquarePhone className="mr-2" size="28" /> Telefono: +39 3279027107</div></li>
+              <li><div className="md:text-2xl sm:text-xl flex items-center mb-2"><FaWhatsapp className="mr-2" size="28" /> Whatsapp: +39 3279027107</div></li>
+              <li><div className="md:text-2xl sm:text-xl flex items-center mb-2"><CiMail className="mr-2" size="28" /> Mail: ilviandanteinsabina@gmail.com</div></li>
+              <li><div className="md:text-2xl sm:text-xl flex items-center mb-2"><FaInstagram className="mr-2" size="28" /> Instagram</div></li>
+              <li><div className="md:text-2xl sm:text-xl flex items-center"><FaFacebook className="mr-2" size="28" /> Facebook</div></li>
             </ul>
           </div>
         </div>
@@ -369,5 +375,7 @@ const FeatureSection = () => {
     </div>
   )
 }
+
+
 
 export default FeatureSection

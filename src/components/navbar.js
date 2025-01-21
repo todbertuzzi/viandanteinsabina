@@ -12,17 +12,42 @@ const Navbar = () => {
               className="text-black flex-shrink-0 font-montserrat font-semibold"
               href="/"
             >
-             {/*  <span className="text-gradient-old bg-gradient-to-r from-pink to-purple font-semibold">
+              {/*  <span className="text-gradient-old bg-gradient-to-r from-pink to-purple font-semibold">
                 <logoPilota />
               </span> */}
               <div
                 className="logo bg-cover"
-                style={{ backgroundImage: `url(${logoPilota})`, width:50, height:50 }}
+                style={{ backgroundImage: `url(${logoPilota})`, width: 50, height: 50 }}
               ></div>
             </a>
             <div className="hidden md:block">
               <div className="ml-10 flex items-center space-x-4">
-               {/*  <Link
+                <a
+                  className="text-black opacity-50 hover:opacity-100 px-3 py-3 rounded-md text-m font-medium font-montserrat"
+                  href="/#prenota"
+                >
+                  Prenota
+                </a>
+                <a
+                  className="text-black opacity-50 hover:opacity-100 px-3 py-3 rounded-md text-m font-medium font-montserrat"
+                  href="/#attivita"
+                >
+                  Attività
+                </a>
+
+                <a
+                  className="text-black opacity-50 hover:opacity-100 px-3 py-3 rounded-md text-m font-medium font-montserrat"
+                  href="/#contattaci"
+                >
+                  Contattaci
+                </a>
+                <a
+                  className="text-black opacity-50 hover:opacity-100 px-3 py-3 rounded-md text-m font-medium font-montserrat"
+                  href="/#dove"
+                >
+                  Dove Siamo
+                </a>
+                {/*  <Link
                   className="relative after:rounded after:bg-black after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 text-black opacity-70 hover:opacity-100 px-3 py-2 rounded-md text-sm font-medium font-montserrat"
                   to="/"
                 >
@@ -92,43 +117,38 @@ const Navbar = () => {
           <div className="md-px-2 pt-2 pb-3 space-y-1 sm:px-3 transition duration-1000 ease-in-out">
             <a
               className="text-black opacity-50 hover:opacity-100 px-3 py-3 rounded-md text-m font-medium font-montserrat"
-              href="/"
+              href="/#prenota"
             >
-              Home
+              Prenota
             </a>
             <a
               className="text-black opacity-50 hover:opacity-100 px-3 py-3 rounded-md text-m font-medium font-montserrat"
-              href="/about"
+              href="/#attivita"
             >
-              About
+              Attività
             </a>
 
             <a
               className="text-black opacity-50 hover:opacity-100 px-3 py-3 rounded-md text-m font-medium font-montserrat"
-              href="/gallery"
+              href="/#contattaci"
             >
-              Gallery
+              Contattaci
             </a>
             <a
               className="text-black opacity-50 hover:opacity-100 px-3 py-3 rounded-md text-m font-medium font-montserrat"
-              href="/blog"
+              href="/#dove"
             >
-              Blog
+              Dove Siamo
             </a>
-            <a
-              className="text-black opacity-50 hover:opacity-100 px-3 py-3 rounded-md text-m font-medium font-montserrat"
-              href="/contact"
-            >
-              Contact
-            </a>
-            <div className="items-center mt-20 py-3">
+
+            {/* <div className="items-center mt-20 py-3">
               <a
                 href="tel:#"
                 className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-black text-white hover:text-black border border-purple  hover:bg-transparent md:text-lg md:px-10 "
               >
                 Chiamaci
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       )}
