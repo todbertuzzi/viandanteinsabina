@@ -64,8 +64,7 @@ const Box_1 = () => {
                     </svg>
                 </div>
                 <div id="basicAccordionCalendario" className="overflow-hidden transition-all duration-300 border-b border-stone-200 ">
-                    <p >
-
+                   
                         <ul>
 
                             <li className="font-semibold">DOMENICA 2 FEBBRAIO - LA VIBRAZIONE: ALL'ORIGINE DEL CANTO</li>
@@ -74,7 +73,7 @@ const Box_1 = () => {
                             <li className="font-semibold"> DOMENICA 11 MAGGIO - LE CORDE VOCALI: LE ALI DELLA VOCE</li>
                             <li className="font-semibold mb-3"> DOMENICA 8 GIUGNO - IL PAVIMENTO PELVICO: RADICARSI PER CANTARE</li>
                         </ul>
-                    </p>
+                   
                 </div>
 
 

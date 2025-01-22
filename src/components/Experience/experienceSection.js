@@ -44,26 +44,26 @@ const ExperienceSection = () => {
   return (
 
     <Fade bottom cascade>
-      
+
       <div id="attivita" className=" max-w-7xl mx-auto lg:px-8 md:px-3">
         <div className="mx-auto max-w-7xl px-4 sm:mt-5 sm:px-6 md:mt-5 lg:mt-10 lg:px-0 xl:mt-10 flex flex-col lg:flex-row gap-3 lg:flex-justify">
-          
+
 
           <div className=" sm:text-center lg:text-right flex flex-col justify-center">
 
             <h3 className="text-black text-2xl font-bold xxs:text-2xl mt-10 xs:text-2xl sm:text-3xl lg:text-4xl text-gradient-old bg-gradient-to-r from-pink to-purple">
-            ATTIVITÀ
+              ATTIVITÀ
             </h3>
 
-           
+
           </div>
         </div>
       </div>
 
-      <div  className="  md:mx-0 flex flex-row justify-space xxs:flex-col xs:flex-col sm:flex-row content-center justify-center align-middle text-center">
+      <div className="  md:mx-0 flex flex-row justify-space xxs:flex-col xs:flex-col sm:flex-row content-center justify-center align-middle text-center">
         <ExperienceCard title={titoloModale[0]} numSample="0" openModal={() => openModal(0)} />
-        <ExperienceCard title={titoloModale[1]}  numSample="1" openModal={() => openModal(1)} />
-        <ExperienceCard title={titoloModale[2]}  numSample="2" openModal={() => openModal(2)} />
+        <ExperienceCard title={titoloModale[1]} numSample="1" openModal={() => openModal(1)} />
+        <ExperienceCard title={titoloModale[2]} numSample="2" openModal={() => openModal(2)} />
         <ExperienceCard title="La voce e la vita" numSample="3" openModal={() => openModal(3)} />
 
         <Transition show={modalState.isOpen} as={Fragment} className="test" >
@@ -71,7 +71,7 @@ const ExperienceSection = () => {
             {/* Sfondo trasparente */}
             <Transition.Child
               as={Fragment}
-              
+
             >
               <div className="sfondo bg-black bg-opacity-50" />
             </Transition.Child>
@@ -80,23 +80,20 @@ const ExperienceSection = () => {
             <div className="sm:w-[90%] md:w-[70%]  p-4 m-auto">
               <Transition.Child
                 as={Fragment}
-               
+
               >
                 {/* max-w-md  */}
 
-                <Dialog.Panel className="w-full modale transform overflow-hidden rounded-lg bg-white py-4 px-8 text-left align-middle shadow-xl transition-all">
-                  <Dialog.Title className="text-black text-3xl font-bold xxs:text-1xl xs:text-2xl sm:text-5xl lg:text-3xl text-gradient-old bg-gradient-to-r from-pink to-purple ">
+                <Dialog.Panel className="max-h-[90vh] grid grid-rows-[auto_1fr_auto] gap-4 w-full modale transform overflow-hidden rounded-lg bg-white py-4 px-8 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Title className="text-black text-3xl font-bold xxs:text-1xl xs:text-2xl sm:text-5xl lg:text-3xl text-gradient-old bg-gradient-to-r from-pink to-purple">
                     {titoloModale[modalState.id]}
-
                   </Dialog.Title>
-                  
-                  <div className="mt-3">
 
+                  <div className="mt-3 overflow-auto">
                     {renderBox()}
                   </div>
 
                   <div className="mt-2 text-center">
-                  
                     <button
                       type="button"
                       className="inline-flex items-center justify-center border align-middle select-none font-sans font-bold text-center transition-all ease-in disabled:opacity-50 disabled:shadow-none disabled:cursor-not-allowed focus:shadow-none text-md py-2 px-4 shadow-sm bg-transparent relative text-stone-700 hover:text-stone-700 border-stone-500 hover:bg-transparent duration-150 hover:border-stone-600 rounded-lg hover:opacity-60 hover:shadow-none"
