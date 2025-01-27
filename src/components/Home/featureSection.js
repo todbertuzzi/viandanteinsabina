@@ -336,7 +336,7 @@ const FeatureSection = () => {
             </div>
           </div>
           <div className="lg:w-2/3 my-4">
-            <Map />
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53327.17354870804!2d12.64899658621124!3d42.27385977214411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f0f4c39edfb2b%3A0x35520aa8e700e1e9!2sLa%20Casa%20del%20Viandante!5e0!3m2!1sit!2sit!4v1738004727076!5m2!1sit!2sit" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
