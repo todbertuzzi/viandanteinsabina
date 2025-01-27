@@ -13,7 +13,7 @@ const IndexPage = () => (
     <Layout>
       <Seo
         title="La casa del Viandante"
-        description="La casa del Viandante desc"
+        description="La casa del Viandante "
       ></Seo>
       <Header></Header>
       <FeatureSection></FeatureSection>
