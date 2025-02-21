@@ -118,11 +118,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-     /*    host: 'https://holo-theme.netlify.app/',
-        sitemap: 'https://holo-theme.netlify.app/sitemap.xml', */
         policy: [{ userAgent: '*', disallow: '/' }],
-        /*   ? [{ userAgent: '*', allow: '/' }]
-          : [{ userAgent: '*', disallow: '/' }], */
       },
     },
   ],
