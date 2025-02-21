@@ -2,7 +2,19 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Seo = ({ description = "", lang = "en", meta = [], title }) => {
+
+
+export const Head = ({ data }) => {
+  const { title, description } = data.site.siteMetadata
+  return (
+    <>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+    </>
+  )
+}
+
+/* const Seo = ({ description = "", lang = "en", meta = [], title }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -63,6 +75,14 @@ const Seo = ({ description = "", lang = "en", meta = [], title }) => {
       ].concat(meta)}
     />
   )
-}
+} */
+
+  const Seo = ({ data }) => {
+    return (
+      <div>
+        {/* Contenuto del componente */}
+      </div>
+    )
+  }
 
 export default Seo

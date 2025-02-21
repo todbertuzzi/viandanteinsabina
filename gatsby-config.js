@@ -7,9 +7,9 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `La casa del Viandante`,
-    description: `La casa del Viandante descirzione`,
-    siteUrl: "https://holo-theme.netlify.app/",
-    author: `Travis Lord <hi@travislord.xyz>`,
+    description: `La casa del Viandante Bad & Breakfast in Sabina, a pochi chilometri da Roma, è il luogo ideale per trascorrere un soggiorno di relax e benessere. `,
+    siteUrl: "https://ilviandanteinsabina.com/",
+    author: `Emiliano Pallini`,
   },
   plugins: [
     {

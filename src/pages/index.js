@@ -9,6 +9,17 @@ import Testimonial from "../components/Home/testimonial"
 import FeaturedBlog from "../components/FeaturedBlog"
 import Seo from "../components/seo"
 
+
+export const Head = ({ data }) => {
+  const { title, description } = data.site.siteMetadata
+  return (
+    <>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+    </>
+  )
+}
+
 const IndexPage = ({ data }) => {
   const box_1 = data.allContentfulHomePageContenuti.edges[0].node.box1;
   const box_2 = data.allContentfulHomePageContenuti.edges[0].node.box2;
@@ -16,10 +27,10 @@ const IndexPage = ({ data }) => {
   return (
     <div className="h-auto w-screen">
       <Layout>
-        <Seo
+       {/*  <Seo
           title="La casa del Viandante"
-          description="La casa del Viandante "
-        ></Seo>
+          description="La casa del Viandante Bad & Breakfast in Sabina, a pochi chilometri da Roma, è il luogo ideale per trascorrere un soggiorno di relax e benessere."
+        ></Seo> */}
         <Header></Header>
         <FeatureSection box_1={box_1} box_2={box_2} attivita={attivita}></FeatureSection>
         {/* <FeaturedBlog></FeaturedBlog>
@@ -31,6 +42,12 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query {
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
     allContentfulHomePageContenuti {
       edges {
         node {
