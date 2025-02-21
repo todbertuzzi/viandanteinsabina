@@ -115,5 +115,15 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+     /*    host: 'https://holo-theme.netlify.app/',
+        sitemap: 'https://holo-theme.netlify.app/sitemap.xml', */
+        policy: [{ userAgent: '*', disallow: '/' }],
+        /*   ? [{ userAgent: '*', allow: '/' }]
+          : [{ userAgent: '*', disallow: '/' }], */
+      },
+    },
   ],
 }
