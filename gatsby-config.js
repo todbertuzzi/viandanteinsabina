@@ -6,6 +6,13 @@ module.exports = {
     author: `Travis Lord <hi@travislord.xyz>`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `nafruldf2gno`,
+        accessToken: `Kd1M4hXjOefDA3rPLJMJ3w0JpSBDr3mFfzoabZHbylQ`,
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,

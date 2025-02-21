@@ -1,6 +1,8 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
 import ExperienceSection from "../Experience/experienceSection"
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Map from "../Map";
 // Assets
 import HeroImage from "../../images/holographic-background-1.webp"
@@ -22,49 +24,53 @@ import { FaTrain } from "react-icons/fa6";
 import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 
-const FeatureSection = () => {
- 
-  
+const FeatureSection = ({ box_1, box_2, attivita }) => {
+
+  const image_ospitalita = getImage(box_1.immagine);
+
+  const image_struttura = getImage(box_2.immagine);
+
 
   return (
     <div className="max-w-7xl mx-auto">
 
-      <ExperienceSection  />
+      <ExperienceSection attivita={attivita} />
 
       <div className="LUCA max-w-7xl mx-auto lg:px-8 md:px-3">
         <div className="mx-auto max-w-7xl px-4 sm:mt-10 sm:px-6 md:mt-10 lg:mt-10 lg:px-0 xl:mt-10 flex flex-col lg:flex-row gap-3 lg:flex-justify">
           <div className="lg:w-1/2 my-4">
-            <img
+           {/*  <img
               className="rounded-xl h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
               src={OspitalitaImage}
               alt="Tessera Hospitalis"
-            ></img>
+            ></img> */}
+            <GatsbyImage
+              className="rounded-xl h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+              image={image_ospitalita}
+              alt="Tessera Hospitalis"
+            />
           </div>
 
           <div className="lg:w-1/2 sm:text-center lg:text-right flex flex-col justify-center">
 
             <img className="logo-section w-16 md:w-24" src={logoPilota} alt="Logo" />
-            <h2 className="text-black md:text-3xl sm:text-2xl font-semibold">IL NOSTRO CONCETTO DI</h2>
+            <h2 className="text-black md:text-3xl sm:text-2xl font-semibold">{box_1.preTitolo}</h2>
             <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient-old bg-gradient-to-r from-pink to-purple">
-              OSPITALITÀ
+              {box_1.titolo}
             </h3>
 
-            <p className="mt-3 text-base text-black-70 sm:mt-5 sm:text-lg  sm:mx-auto md:mt-5 md:text-xl lg:mx-auto lg:mr-0">
+            {/* <p className="mt-3 text-base text-black-70 sm:mt-5 sm:text-lg  sm:mx-auto md:mt-5 md:text-xl lg:mx-auto lg:mr-0">
               HOSPES in origine è il “padrone di casa” che dà ospitalità al forestiero;
               i rapporti che si istauravano tra chi accoglieva e chi era accolto erano
               così stretti che, sin dai tempi più antichi, hospes ha indicato anche
               la persona accolta in casa d’altri...
-            </p>
+            </p> */}
+             <div className="mt-3 text-base text-black-70 sm:mt-5 sm:text-lg sm:mx-auto md:mt-5 md:text-xl lg:mx-auto lg:mr-0">
+              {documentToReactComponents(JSON.parse(box_1.testo.raw))}
+            </div>
 
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-end">
-              {/* <div className="rounded-md">
-                <a
-                  href="tel:#"
-                  className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-black text-white hover:text-black border border-purple hover:bg-transparent md:text-lg md:px-10"
-                >
-                  Chiamaci
-                </a>
-              </div> */}
+              
               <div className="mt-3 sm:mt-0 sm:ml-3">
                 <a
                   href="/ospitalita"
@@ -100,43 +106,25 @@ const FeatureSection = () => {
           <div className="w-4/6  bg-gray-800  p-8 rounded-xl sm:m-0 md:m-5 md:mt-0 xxs:w-full xs:w-full sm:w-4/6">
             <img className="logo-section w-16 md:w-24 sx" src={logoPilota} alt="Logo" />
             <h2 className="text-white text-4xl">
-              La gioia di incontrarsi
+              {box_2.titolo}
             </h2>
-            <p className="mt-10 text-white opacity-70">
-              La Casa del Viandante è un luogo di pace, su un crocevia di strade e di cammini.
-              È la casa che accoglie tutti i viaggiatori, siano essi lavoratori, vacanzieri, esploratori del territorio o dello spirito.
-              La nostra struttura nasce con l' intento di unire un' atmosfera familiare e rilassante alla possibilità di fare esperienze a carattere culturale, sportivo e spirituale.
-              Nella cucina condivisa è sempre presente una bacheca con tanti spunti per i viaggiatori: trekking organizzati, equitazione, canoa, spettacoli e festival musicali, le immancabili sagre e molto ancora. Siamo  sempre felici di darvi informazioni e di aiutarvi.
-              Nella Stanza delle Attività si svolgono corsi e seminari che organizziamo personalmente: il calendario è aggiornato ogni settimana.
-              I ciclisti, i camminatori e i pellegrini sono i benvenuti per una sosta comoda e sicura. In struttura è possibile fare il bucato e cucinare i pasti. Le biciclette sono custodite con cura.
-            </p>
+            <div className="mt-10 text-white opacity-70 text-base text-black-70  sm:text-lg md:text-xl ">
+            {documentToReactComponents(JSON.parse(box_2.testo.raw))}
+              </div>
           </div>
 
           <div className="w-2/6 bg-gradient-to-r from-pink to-purple p-0 rounded-xl sm:m-0 mt-2  md:m-5 md:mt-0 xxs:w-full xs:w-full sm:w-2/6 hidden md:block">
-            {/* <span className="text-black font-semibold font-montserrat text-4xl">
-              TECH STACK
-            </span>
-            <div className="mt-5">
-              <div>
-                <p className="text-black text-2xl">Gatsby 5+</p>
-                <p className="text-black opacity-50 text-sm">SSG and more...</p>
-              </div>
-              <div className="mt-5">
-                <p className="text-black text-2xl">React 18+</p>
-                <p className="text-black opacity-50 text-sm">Create more...</p>
-              </div>
-              <div className="mt-5">
-                <p className="text-black text-2xl">Tailwind CSS 3+</p>
-                <p className="text-black opacity-50 text-sm">
-                  A utility-first CSS
-                </p>
-              </div>
-            </div> */}
-            <img
+           
+            {/* <img
               className="rounded-xl h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
               src={StrutturaImage}
               alt="La struttura"
-            ></img>
+            ></img> */}
+            <GatsbyImage
+              className="rounded-xl h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+              image={image_struttura}
+              alt="La struttura"
+            />
           </div>
         </div>
       </Fade>
@@ -293,7 +281,7 @@ const FeatureSection = () => {
           </div>
         </div>
       </Fade> */}
- 
+
       <div id="dove" className=" max-w-7xl mx-auto lg:px-8 md:px-3">
         <div className="mx-auto max-w-7xl px-4 sm:mt-10 sm:px-6 md:mt-10 lg:mt-10 lg:px-0 xl:mt-10 flex flex-col lg:flex-row gap-3 lg:flex-justify">
           <div className="w-full sm:text-center lg:text-left flex flex-col justify-center">
@@ -336,11 +324,11 @@ const FeatureSection = () => {
             </div>
           </div>
           <div className="lg:w-2/3 my-4">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53327.17354870804!2d12.64899658621124!3d42.27385977214411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f0f4c39edfb2b%3A0x35520aa8e700e1e9!2sLa%20Casa%20del%20Viandante!5e0!3m2!1sit!2sit!4v1738004727076!5m2!1sit!2sit" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53327.17354870804!2d12.64899658621124!3d42.27385977214411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f0f4c39edfb2b%3A0x35520aa8e700e1e9!2sLa%20Casa%20del%20Viandante!5e0!3m2!1sit!2sit!4v1738004727076!5m2!1sit!2sit" width="100%" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
-      
+
       {/* 
       <div className="mt-10 px-8">
         <h2 className="text-black text-4xl font-semibold text-gradient-old bg-gradient-to-r from-pink to-purple">

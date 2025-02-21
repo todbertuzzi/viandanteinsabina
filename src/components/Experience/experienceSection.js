@@ -15,9 +15,9 @@ import Box_2 from "./box_2"
 import Box_3 from "./box_3"
 import Box_4 from "./box_4"
 
-const ExperienceSection = () => {
+const ExperienceSection = ({attivita}) => {
   const [modalState, setModalState] = useState({ id: null, isOpen: false });
-
+  
   function openModal(id) {
     setModalState({ id, isOpen: true });
   }
@@ -29,9 +29,9 @@ const ExperienceSection = () => {
   const renderBox = () => {
     switch (modalState.id) {
       case 0:
-        return <Box_1 />;
+        return <Box_1 content={attivita[0]}/>;
       case 1:
-        return <Box_2 />;
+        return <Box_1 content={attivita[1]}/>;
       case 2:
         return <Box_3 />;
       case 3:

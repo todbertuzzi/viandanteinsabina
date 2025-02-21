@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "author": "Travis Lord <hi@travislord.xyz>",
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^16.0.1",
     "@fontsource-variable/open-sans": "^5.1.1",
     "@fontsource/montserrat": "^5.1.0",
     "@fontsource/noto-serif": "^5.1.0",
@@ -30,6 +31,7 @@
     "gatsby-remark-relative-images": "^2.0.5",
     "gatsby-remark-responsive-iframe": "^6.13.2",
     "gatsby-remark-smartypants": "^6.13.0",
+    "gatsby-source-contentful": "^8.15.0",
     "gatsby-source-filesystem": "^5.12.1",
     "gatsby-transformer-remark": "^6.13.0",
     "gatsby-transformer-sharp": "^5.14.0",

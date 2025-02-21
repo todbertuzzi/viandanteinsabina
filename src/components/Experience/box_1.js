@@ -4,22 +4,54 @@ import React, { useEffect } from "react"
 import { initAccordion } from 'david-ai';
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { IoIosInformationCircleOutline } from "react-icons/io";
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
-const Box_1 = () => {
+const Box_1 = ({ content }) => {
     useEffect(() => {
+        console.log("initAccordion")
         initAccordion();
     }, []);
 
     return (
         <>
-            <p>
+            {/* <p>
                 Il corso è a cura di <span className="font-semibold">Donatella Livigni</span>, docente di canto funzionale e integrato, antropologa della musica ed esperta in
                 studi sulle civiltà arcaiche, musicista e performer,riflessologa e operatrice olistica.</p>
             <p>
                 I seminari prevedono un massimo di 10 partecipanti e si
                 attiveranno al raggiungimento di un minimo di 8 persone , <span className="font-semibold">COSTO 30€</span>
-            </p>
-            <div className="group block w-full py-3" aria-disabled="false" data-dui-accordion-container data-dui-accordion-mode="exclusive">
+            </p> */}
+            <div className="mt-3 text-base text-black-70 sm:mt-5 sm:text-lg sm:mx-auto md:mt-5 md:text-xl lg:mx-auto lg:mr-0">
+                {documentToReactComponents(JSON.parse(content.descrizione.raw))}
+            </div>
+             {content.contenutoExtrq.map((item, index) => {
+                return (
+                    <div key={index} className="group block w-full py-3" aria-disabled="false" data-dui-accordion-container data-dui-accordion-mode="exclusive">
+                        <div
+                            className="flex items-center justify-between w-full py-2 text-left font-medium text-stone-800 cursor-pointer"
+                            data-dui-accordion-toggle
+                            data-dui-accordion-target={"#basicAccordion_" + index}
+                            aria-expanded="false">
+                            <div className="flex items-center">
+                                {item.icon == "informazioni" && <IoIosInformationCircleOutline className="mr-2" />}
+                                {item.icon == "informazioni" && "INFORMAZIONI"}
+                                {item.icon == "calendario" && <FaRegCalendarAlt className="mr-2" />}
+                                {item.icon == "calendario" && "CALENDARIO DEGLI INCONTRI"}
+                            </div>
+                            <svg data-dui-accordion-icon width="1.5em" height="1.5em" strokeWidth="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor" className="h-4 w-4 rotate-180">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"></path>
+                            </svg>
+                        </div>
+                        <div id={"basicAccordion_" + index} className="overflow-hidden transition-all duration-300 border-b border-stone-200 ">
+                            {documentToReactComponents(JSON.parse(item.contenuto.raw))}
+                        </div>
+
+
+                    </div>
+                )
+            })
+            }
+            {/*  <div className="group block w-full py-3" aria-disabled="false" data-dui-accordion-container data-dui-accordion-mode="exclusive">
                 <div
                     className="flex items-center justify-between w-full py-2 text-left font-medium text-stone-800 cursor-pointer"
                     data-dui-accordion-toggle
@@ -27,7 +59,7 @@ const Box_1 = () => {
                     aria-expanded="false">
                     <div className="flex items-center">
                         <IoIosInformationCircleOutline className="mr-2" /> INFORMAZIONI
-                    </div> 
+                    </div>
                     <svg data-dui-accordion-icon width="1.5em" height="1.5em" strokeWidth="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor" className="h-4 w-4 rotate-180">
                         <path d="M6 9L12 15L18 9" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"></path>
                     </svg>
@@ -49,38 +81,40 @@ const Box_1 = () => {
 
 
             </div>
+ */}
+           {/*  {content.contenutoExtrq.forEach((element, index) => {
+                return (
+                    <div className="group block w-full pb-5" aria-disabled="false" data-dui-accordion-container data-dui-accordion-mode="exclusive">
+                        <div
+                            className="flex items-center justify-between w-full py-2 text-left font-medium text-stone-800 cursor-pointer"
+                            data-dui-accordion-toggle
+                            data-dui-accordion-target={"#basicAccordionCalendario"+index}
+                            aria-expanded="false">
+                            <div className="flex items-center">
+                                <FaRegCalendarAlt className="mr-2" /> CALENDARIO DEGLI INCONTRI
+                            </div>
+                            <svg data-dui-accordion-icon width="1.5em" height="1.5em" strokeWidth="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor" className="h-4 w-4 rotate-180">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"></path>
+                            </svg>
+                        </div>
+                        <div id="basicAccordionCalendario2" className="overflow-hidden transition-all duration-300 border-b border-stone-200 ">
+                            {documentToReactComponents(JSON.parse(content.contenutoExtrq[1].contenuto.raw
+                            ))}
 
-            <div className="group block w-full pb-5" aria-disabled="false" data-dui-accordion-container data-dui-accordion-mode="exclusive">
-                <div
-                    className="flex items-center justify-between w-full py-2 text-left font-medium text-stone-800 cursor-pointer"
-                    data-dui-accordion-toggle
-                    data-dui-accordion-target="#basicAccordionCalendario"
-                    aria-expanded="false">
-                    <div className="flex items-center">
-                        <FaRegCalendarAlt className="mr-2" /> CALENDARIO DEGLI INCONTRI
+                        </div>
+
+
                     </div>
-                    <svg data-dui-accordion-icon width="1.5em" height="1.5em" strokeWidth="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor" className="h-4 w-4 rotate-180">
-                        <path d="M6 9L12 15L18 9" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"></path>
-                    </svg>
-                </div>
-                <div id="basicAccordionCalendario" className="overflow-hidden transition-all duration-300 border-b border-stone-200 ">
-                   
-                        <ul>
-
-                            <li className="font-semibold">DOMENICA 2 FEBBRAIO - LA VIBRAZIONE: ALL'ORIGINE DEL CANTO</li>
-                            <li className="font-semibold"> DOMENICA 16 MARZO ~ L'ORECCHIO E LA VITA: RINASCERE NELLA VOCE</li>
-                            <li className="font-semibold"> DOMENICA 13 APRILE - LA LARINGE: IL CUORE DELLA VOCE</li>
-                            <li className="font-semibold"> DOMENICA 11 MAGGIO - LE CORDE VOCALI: LE ALI DELLA VOCE</li>
-                            <li className="font-semibold mb-3"> DOMENICA 8 GIUGNO - IL PAVIMENTO PELVICO: RADICARSI PER CANTARE</li>
-                        </ul>
-                   
-                </div>
+                )
+            })} */}
+            {/* {true &&
+                
 
 
-            </div>
+            } */}
 
 
-            
+
         </>
     )
 }
