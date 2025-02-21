@@ -1,3 +1,9 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
+
+
 module.exports = {
   siteMetadata: {
     title: `La casa del Viandante`,
@@ -9,8 +15,8 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `nafruldf2gno`,
-        accessToken: `Kd1M4hXjOefDA3rPLJMJ3w0JpSBDr3mFfzoabZHbylQ`,
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
     `gatsby-plugin-image`,
@@ -95,19 +101,14 @@ module.exports = {
         icon: `src/images/3D-liquid-abstract-5.webp`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: "gatsby-plugin-netlify-cms",
-      options: {
-        enableIdentityWidget: true,
-      },
-    },
+   
     {
       resolve: "gatsby-plugin-decap-cms",
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
-    `gatsby-plugin-netlify`,
+   
     `gatsby-plugin-gatsby-cloud`,
     "gatsby-plugin-postcss",
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -211,8 +211,8 @@ const FeatureSection = ({ box_1, box_2, attivita }) => {
               <li><div className="md:text-2xl sm:text-xl flex items-center mb-2"><FaSquarePhone className="mr-2" size="28" /> Telefono: +39 3279027107</div></li>
               <li><div className="md:text-2xl sm:text-xl flex items-center mb-2"><FaWhatsapp className="mr-2" size="28" /> Whatsapp: +39 3279027107</div></li>
               <li><div className="md:text-2xl sm:text-xl flex items-center mb-2"><CiMail className="mr-2" size="28" /> Mail: ilviandanteinsabina@gmail.com</div></li>
-              <li><div className="md:text-2xl sm:text-xl flex items-center mb-2"><FaInstagram className="mr-2" size="28" /> Instagram</div></li>
-              <li><div className="md:text-2xl sm:text-xl flex items-center"><FaFacebook className="mr-2" size="28" /> Facebook</div></li>
+              <li><div className="md:text-2xl sm:text-xl flex items-center mb-2"><a className="flex text-black md:text-2xl sm:text-xl" href="https://www.instagram.com/ilviandanteinsabina?igsh=NjV2cmxxdTVtcGE4" target="_blank"><FaInstagram className="mr-2" size="28" /> Instagram</a></div></li>
+              <li><div className="md:text-2xl sm:text-xl flex items-center"><a className="flex text-black md:text-2xl sm:text-xl" href="https://www.facebook.com/profile.php?id=100012826775817" target="_blank"><FaFacebook className="mr-2" size="28" /> Facebook</a></div></li>
             </ul>
           </div>
         </div>

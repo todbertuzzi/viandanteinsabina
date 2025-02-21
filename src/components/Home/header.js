@@ -91,14 +91,18 @@ const Header = () => {
           >
             Scopri di più
           </Link> */}
-          <button type="button" class="mr-2 text-gray-900 airbnb_book focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600  me-2 mb-2">
-            <TbBrandAirbnb size="40" />
-            intero alloggio
-          </button>
-          <button type="button" class="ml-2 text-gray-900  booking_book  focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 0   me-2 mb-2">
-            <TbBrandBooking size="40" />
-            camere
-          </button>
+          <a target="_blank" href="https://www.airbnb.it/rooms/1196884562594764074?search_mode=regular_search&check_in=2024-08-09&check_out=2024-08-11&source_impression_id=p3_1721296761_P3pdOAHDVkrELfF3&previous_page_section_name=1000&federated_search_id=02a0b523-b89b-4da5-9a17-8624caaa0270">
+            <button type="button" class="mr-2 text-gray-900 airbnb_book focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600  me-2 mb-2">
+              <TbBrandAirbnb size="40" />
+              intero alloggio
+            </button>
+          </a>
+          <a target="_blank" href="https://www.booking.com/hotel/it/la-casa-del-viandante-forano.it.html?label=gen173nr-1BCAsocUIcbGEtY2FzYS1kZWwtdmlhbmRhbnRlLWZvcmFub0gzWARocYgBAZgBFLgBGMgBDNgBAegBAYgCAagCBLgC9MrjtAbAAgHSAiQyMzY2NmE3Zi1hMGZjLTQyYmMtOWU2Zi00MDBmM2U3YWUzODbYAgXgAgE&sid=1f1b173aef7e742d5cdff3ab1ce843b1&dist=0&group_adults=2&keep_landing=1&sb_price_type=total&type=total&">
+            <button type="button" class="ml-2 text-gray-900  booking_book  focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 0   me-2 mb-2">
+              <TbBrandBooking size="40" />
+              camere
+            </button>
+          </a>
         </div>
       </div>
     </Fade>
