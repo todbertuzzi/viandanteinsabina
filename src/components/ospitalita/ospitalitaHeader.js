@@ -3,6 +3,7 @@ import Fade from "react-reveal/Fade"
 
 import Image3 from "../../images/ospitalita_background_desk.jpg"
 import ImageMobile from "../../images/ospitalita_background.jpg"
+import OspitalitaExtra from "./ospitalitaExtra"
 
 const OspitalitaHeader = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -37,6 +38,7 @@ const OspitalitaHeader = () => {
           OSPITALITÀ
           </h2>
         </div>
+        <OspitalitaExtra></OspitalitaExtra>
       </div>
     </Fade>
   )
