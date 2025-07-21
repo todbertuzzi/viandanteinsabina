@@ -1,16 +1,22 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
+/* NEW */
+
 module.exports = {
   siteMetadata: {
     title: `La casa del Viandante`,
-    description: `La casa del Viandante descirzione`,
-    siteUrl: "https://holo-theme.netlify.app/",
-    author: `Travis Lord <hi@travislord.xyz>`,
+    description: `La casa del Viandante Bad & Breakfast in Sabina, a pochi chilometri da Roma, è il luogo ideale per trascorrere un soggiorno di relax e benessere. `,
+    siteUrl: "https://ilviandanteinsabina.com/",
+    author: `Emiliano Pallini`,
   },
   plugins: [
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `nafruldf2gno`,
-        accessToken: `Kd1M4hXjOefDA3rPLJMJ3w0JpSBDr3mFfzoabZHbylQ`,
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
     `gatsby-plugin-image`,
@@ -95,24 +101,25 @@ module.exports = {
         icon: `src/images/3D-liquid-abstract-5.webp`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: "gatsby-plugin-netlify-cms",
-      options: {
-        enableIdentityWidget: true,
-      },
-    },
+   
     {
       resolve: "gatsby-plugin-decap-cms",
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
-    `gatsby-plugin-netlify`,
+   
     `gatsby-plugin-gatsby-cloud`,
     "gatsby-plugin-postcss",
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
   ],
 }
