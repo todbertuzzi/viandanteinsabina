@@ -46,20 +46,18 @@ const Footer = () => {
               <span className="text-xl text-white">Amici</span>
               <ul className=" font-montserrat font-medium">
                 <li>
-                  <a className="text-sm opacity-70">Link Amico 1</a>
+                  <a className="text-sm opacity-70" href="http://www.dalina1905.it/" >Dalina 1905</a>
                 </li>
                 <li>
-                <a className="text-sm opacity-70">Link Amico 2</a>
+                <a className="text-sm opacity-70" href="https://www.trattoriacapocroce.it/">Trattoria CapoCroce</a>
                 </li>
                 <li>
-                <a className="text-sm opacity-70">Link Amico 3</a>
+                <a className="text-sm opacity-70" href="https://www.facebook.com/LaTavernaDeiCorsari">La Taverna Dei Corsari</a>
                 </li>{" "}
                 <li>
-                <a className="text-sm opacity-70">Link Amico 4</a>
+                <a className="text-sm opacity-70" href="https://www.facebook.com/pasticceriacalu">Pasticceria Calù </a>
                 </li>
-                <li>
-                <a className="text-sm opacity-70">Link Amico 5</a>
-                </li>
+               
               </ul>
             </div>
           </div>
