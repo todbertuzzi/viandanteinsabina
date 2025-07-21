@@ -78,7 +78,6 @@ export const query = graphql`
               raw
             }
             image {
-              gatsbyImage
               url
             }
             contenutoExtra {
