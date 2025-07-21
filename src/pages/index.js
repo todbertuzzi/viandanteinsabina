@@ -60,7 +60,11 @@ export const query = graphql`
             descrizione {
               raw
             }
-            contenutoExtrq {
+            image {
+              gatsbyImage
+              url
+            }
+            contenutoExtra {
               icon
               contenuto {
                 raw

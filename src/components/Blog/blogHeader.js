@@ -26,7 +26,7 @@ const BlogHeader = ({ post }) => {
           </div>
           <div
             data-gatsby-image-wrapper=""
-            class="my-5 mr-5 xxs:w-full xs:w-full sm:w-full lg:w-full"
+            className="my-5 mr-5 xxs:w-full xs:w-full sm:w-full lg:w-full"
           >
             <div className="overflow-hidden  rounded-xl xxs:w-full">
               {post.node.frontmatter.featuredimage && (

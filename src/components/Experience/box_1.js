@@ -24,7 +24,7 @@ const Box_1 = ({ content }) => {
             <div className="mt-3 text-base text-black-70 sm:mt-5 sm:text-lg sm:mx-auto md:mt-5 md:text-xl lg:mx-auto lg:mr-0">
                 {documentToReactComponents(JSON.parse(content.descrizione.raw))}
             </div>
-             {content.contenutoExtrq.map((item, index) => {
+             {content.contenutoExtra.map((item, index) => {
                 return (
                     <div key={index} className="group block w-full py-3" aria-disabled="false" data-dui-accordion-container data-dui-accordion-mode="exclusive">
                         <div
@@ -82,7 +82,7 @@ const Box_1 = ({ content }) => {
 
             </div>
  */}
-           {/*  {content.contenutoExtrq.forEach((element, index) => {
+           {/*  {content.contenutoExtra.forEach((element, index) => {
                 return (
                     <div className="group block w-full pb-5" aria-disabled="false" data-dui-accordion-container data-dui-accordion-mode="exclusive">
                         <div
@@ -98,7 +98,7 @@ const Box_1 = ({ content }) => {
                             </svg>
                         </div>
                         <div id="basicAccordionCalendario2" className="overflow-hidden transition-all duration-300 border-b border-stone-200 ">
-                            {documentToReactComponents(JSON.parse(content.contenutoExtrq[1].contenuto.raw
+                            {documentToReactComponents(JSON.parse(content.contenutoExtra[1].contenuto.raw
                             ))}
 
                         </div>

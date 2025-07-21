@@ -16,6 +16,7 @@ import Box_3 from "./box_3"
 import Box_4 from "./box_4"
 
 const ExperienceSection = ({attivita}) => {
+  console.log("attivita", attivita)
   const [modalState, setModalState] = useState({ id: null, isOpen: false });
   
   function openModal(id) {
@@ -33,7 +34,7 @@ const ExperienceSection = ({attivita}) => {
       case 1:
         return <Box_1 content={attivita[1]}/>;
       case 2:
-        return <Box_3 />;
+        return <Box_1 content={attivita[2]}/>;
       case 3:
         return <Box_4 />;
       default:
@@ -61,11 +62,17 @@ const ExperienceSection = ({attivita}) => {
       </div>
 
       <div className="  md:mx-0 flex flex-row justify-space xxs:flex-col xs:flex-col sm:flex-row content-center justify-center align-middle text-center">
-        <ExperienceCard title={titoloModale[0]} numSample="0" openModal={() => openModal(0)} />
-        <ExperienceCard title={titoloModale[1]} numSample="1" openModal={() => openModal(1)} />
-        <ExperienceCard title={titoloModale[2]} numSample="2" openModal={() => openModal(2)} />
-        <ExperienceCard title="La voce e la vita" numSample="3" openModal={() => openModal(3)} />
-
+       {/* CICLO attivita e PER OGNI ELEMENTO AGGIUNGO IL COMP ExperienceCard */}
+        {attivita.map((item, index) => (
+          <ExperienceCard
+            key={index}
+            title={item.titolo} 
+            image={item.image}
+            openModal={() => openModal(index)}
+          />
+        ))}       
+       
+      
         <Transition show={modalState.isOpen} as={Fragment} className="test" >
           <Dialog as="div" className="relative z-50 modal fixed inset-0" onClose={closeModal}>
             {/* Sfondo trasparente */}
